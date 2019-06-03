@@ -14,7 +14,7 @@
 
 <DimensionAware
 	Default={NavMobile}
-	Desktop={import('../components/NavDesktop.svelte')}
+	Desktop={() => import('../components/NavDesktop.svelte')}
 	props={{ segment }}
 />
 

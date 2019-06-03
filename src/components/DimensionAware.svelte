@@ -3,8 +3,8 @@
   import dimensions from '../stores/dimensions'
 
   export let Default
-  export let Mobile = Default
-  export let Desktop = Default
+  export let Mobile
+  export let Desktop
   export let props
 
   export let widthThreshhold = 500
@@ -21,8 +21,8 @@
   }
 </script>
 
-{#if Component instanceof Promise}
-  {#await Component}
+{#if Component && Component !== Default}
+  {#await Component()}
     <svelte:component this={Default} {...props} />
   {:then Result}
     <svelte:component this={Result.default} {...props} />
