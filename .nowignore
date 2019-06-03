@@ -1,6 +1,1 @@
-*
-!static
-!static/
-!__sapper__
-!__sapper__/
 __sapper__/dev
