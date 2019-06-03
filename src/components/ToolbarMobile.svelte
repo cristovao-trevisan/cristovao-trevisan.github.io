@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import NavIcon from 'evil-icons/assets/icons/ei-navicon.svg'
+  import { MenuIcon } from 'svelte-feather-icons'
   import FlatButton from './FlatButton.svelte'
 
   const dispatch = createEventDispatcher()
@@ -22,7 +22,7 @@
 
 <div class="container">
   <FlatButton on:click={onMenu}>
-    <img class="nav-icon" src={NavIcon} alt="open navigation" />
+    <img class="nav-icon" src={MenuIcon} alt="open navigation" />
   </FlatButton>
 </div>
 

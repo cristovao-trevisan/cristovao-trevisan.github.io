@@ -5,12 +5,12 @@
   "scripts": {
     "start": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export --legacy"
+    "export": "sapper export --legacy",
+    "publish": "npm run export && cp __sapper__export docs"
   },
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "^0.5.0",
-    "svelte-feather-icons": "^1.1.0",
     "svelte-i18n": "^1.0.2"
   },
   "devDependencies": {
@@ -30,7 +30,9 @@
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-url": "^2.2.1",
     "sapper": "^0.27.0",
+    "sirv": "^0.4.2",
     "svelte": "^3.0.0",
+    "svelte-feather-icons": "^1.1.0",
     "svelte-loadable": "^1.0.1",
     "svelte-preprocess": "^2.11.0"
   }
