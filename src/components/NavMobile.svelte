@@ -1,9 +1,12 @@
 <script>
-	import menuRoutes from '../menu-routes'
 	import Toolbar from './ToolbarMobile.svelte'
 	import Drawer from './Drawer.svelte'
 
 	export let segment = ''
+	export let routes = []
+	export let basepath = ''
+
+	$: parsedSegment = segment === '/' ? '' : (segment || '')
 
 	let menuOpen = false
 	const toggleMenu = () => { menuOpen = !menuOpen }
@@ -13,10 +16,10 @@
 
 <Drawer open={menuOpen} on:close={toggleMenu}>
 	<nav class="container">
-		{#each menuRoutes as { path, icon, title } (path)}
+		{#each routes as { path, icon, title } (path)}
 			<a
-				href={path} alt={title}
-				class="item-container" class:selected={segment === path}
+				href={`${basepath}/${path}`} alt={title}
+				class="item-container" class:selected={path === parsedSegment}
 				on:click={toggleMenu}
 			>
 				<div class="item-icon"> <svelte:component this={icon} /> </div>

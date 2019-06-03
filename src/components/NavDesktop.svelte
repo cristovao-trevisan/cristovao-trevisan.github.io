@@ -1,13 +1,15 @@
 <script>
-	import menuRoutes from '../menu-routes'
-
+	export let routes = []
 	export let segment = ''
+	export let basepath = ''
+
+	$: parsedSegment = segment === '/' ? '' : (segment || '')
 </script>
 
 <nav class="container">
-	{#each menuRoutes as { path, icon, title }}
-		<div class="item-container" class:selected={segment === path}>
-		  <a class="item-title" href={path}> {title} </a>
+	{#each routes as { path, icon, title }}
+		<div class="item-container" class:selected={parsedSegment === path}>
+		  <a class="item-title" href={`${basepath}/${path}`}> {title} </a>
 		</div>
 	{/each}
 </nav>
