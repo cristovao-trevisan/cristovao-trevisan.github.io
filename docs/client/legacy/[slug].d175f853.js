@@ -1,2 +1,153 @@
-import{_ as t,a as s,b as n,c as a,i as e,d as o,s as r,S as i,B as u,t as c,D as p,C as f,u as h,v as l,j as m,f as v,x as d,I as x,n as b}from"./chunk.605ae403.js";import{_ as j,a as g}from"./chunk.836d822b.js";function k(t){var s,n,a,e,o,r,i=t.post.title,j=t.post.html;return document.title=s=t.post.title,{c:function(){n=u(),a=c("h1"),e=p(i),o=u(),r=c("div"),this.h()},l:function(t){n=f(t,"\n\n"),a=h(t,"H1",{},!1);var s=l(a);e=f(s,i),s.forEach(m),o=f(t,"\n\n"),r=h(t,"DIV",{class:!0},!1),l(r).forEach(m),this.h()},h:function(){r.className="content svelte-gnxal1"},m:function(t,s){v(t,n,s),v(t,a,s),d(a,e),v(t,o,s),v(t,r,s),r.innerHTML=j},p:function(t,n){t.post&&s!==(s=n.post.title)&&(document.title=s),t.post&&i!==(i=n.post.title)&&x(e,i),t.post&&j!==(j=n.post.html)&&(r.innerHTML=j)},i:b,o:b,d:function(t){t&&(m(n),m(a),m(o),m(r))}}}function y(t){return H.apply(this,arguments)}function H(){return(H=j(g.mark(function t(s){var n,a,e;return g.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=s.params,s.query,t.next=3,this.fetch("blog/".concat(n.slug,".json"));case 3:return a=t.sent,t.next=6,a.json();case 6:if(e=t.sent,200!==a.status){t.next=11;break}return t.abrupt("return",{post:e});case 11:this.error(a.status,e.message);case 12:case"end":return t.stop()}},t,this)}))).apply(this,arguments)}function w(t,s,n){var a=s.post;return t.$set=function(t){"post"in t&&n("post",a=t.post)},{post:a}}export default(function(u){function c(t){var i;return s(this,c),i=n(this,a(c).call(this)),e(o(i),t,w,k,r,["post"]),i}return t(c,i),c}());export{y as preload};
+import { _ as _inherits, a as _classCallCheck, b as _possibleConstructorReturn, c as _getPrototypeOf, i as init, d as _assertThisInitialized, s as safe_not_equal, S as SvelteComponent, B as space, t as element, D as text, C as claim_text, u as claim_element, v as children, j as detach, f as insert, x as append, I as set_data, n as noop } from './chunk.605ae403.js';
+import { _ as _asyncToGenerator, a as _regeneratorRuntime } from './chunk.836d822b.js';
+
+function create_fragment(ctx) {
+  var title_value,
+      t0,
+      h1,
+      t1_value = ctx.post.title,
+      t1,
+      t2,
+      div,
+      raw_value = ctx.post.html;
+  document.title = title_value = ctx.post.title;
+  return {
+    c: function c() {
+      t0 = space();
+      h1 = element("h1");
+      t1 = text(t1_value);
+      t2 = space();
+      div = element("div");
+      this.h();
+    },
+    l: function l(nodes) {
+      t0 = claim_text(nodes, "\n\n");
+      h1 = claim_element(nodes, "H1", {}, false);
+      var h1_nodes = children(h1);
+      t1 = claim_text(h1_nodes, t1_value);
+      h1_nodes.forEach(detach);
+      t2 = claim_text(nodes, "\n\n");
+      div = claim_element(nodes, "DIV", {
+        class: true
+      }, false);
+      var div_nodes = children(div);
+      div_nodes.forEach(detach);
+      this.h();
+    },
+    h: function h() {
+      div.className = "content svelte-gnxal1";
+    },
+    m: function m(target, anchor) {
+      insert(target, t0, anchor);
+      insert(target, h1, anchor);
+      append(h1, t1);
+      insert(target, t2, anchor);
+      insert(target, div, anchor);
+      div.innerHTML = raw_value;
+    },
+    p: function p(changed, ctx) {
+      if (changed.post && title_value !== (title_value = ctx.post.title)) {
+        document.title = title_value;
+      }
+
+      if (changed.post && t1_value !== (t1_value = ctx.post.title)) {
+        set_data(t1, t1_value);
+      }
+
+      if (changed.post && raw_value !== (raw_value = ctx.post.html)) {
+        div.innerHTML = raw_value;
+      }
+    },
+    i: noop,
+    o: noop,
+    d: function d(detaching) {
+      if (detaching) {
+        detach(t0);
+        detach(h1);
+        detach(t2);
+        detach(div);
+      }
+    }
+  };
+}
+
+function preload(_x) {
+  return _preload.apply(this, arguments);
+}
+
+function _preload() {
+  _preload = _asyncToGenerator(
+  /*#__PURE__*/
+  _regeneratorRuntime.mark(function _callee(_ref) {
+    var params, query, res, data;
+    return _regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            params = _ref.params, query = _ref.query;
+            _context.next = 3;
+            return this.fetch("blog/".concat(params.slug, ".json"));
+
+          case 3:
+            res = _context.sent;
+            _context.next = 6;
+            return res.json();
+
+          case 6:
+            data = _context.sent;
+
+            if (!(res.status === 200)) {
+              _context.next = 11;
+              break;
+            }
+
+            return _context.abrupt("return", {
+              post: data
+            });
+
+          case 11:
+            this.error(res.status, data.message);
+
+          case 12:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, this);
+  }));
+  return _preload.apply(this, arguments);
+}
+
+function instance($$self, $$props, $$invalidate) {
+  var post = $$props.post;
+
+  $$self.$set = function ($$props) {
+    if ('post' in $$props) $$invalidate('post', post = $$props.post);
+  };
+
+  return {
+    post: post
+  };
+}
+
+var Slug =
+/*#__PURE__*/
+function (_SvelteComponent) {
+  _inherits(Slug, _SvelteComponent);
+
+  function Slug(options) {
+    var _this;
+
+    _classCallCheck(this, Slug);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Slug).call(this));
+    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, ["post"]);
+    return _this;
+  }
+
+  return Slug;
+}(SvelteComponent);
+
+export default Slug;
+export { preload };
 //# sourceMappingURL=[slug].d175f853.js.map

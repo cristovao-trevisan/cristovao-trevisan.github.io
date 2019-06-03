@@ -59,9 +59,9 @@ export default {
 				]
 			}),
 
-			!dev && terser({
-				module: true
-			})
+			// !dev && terser({
+			// 	module: true
+			// })
 		],
 
 		onwarn,
