@@ -8,21 +8,24 @@
   const onMenu = () => dispatch('menu')
 </script>
 
-<style>
+<style lang="scss">
   .container {
-    width: calc(100% - 8px);
+    width: calc(100% - 16Spx);
     border: 0;
-    padding: 4px;
+    padding: 8px;
   }
 
   .nav-icon {
-    width: 40px;
+    :global(svg) {
+			height: 36px;
+      width: 36px;
+		}
   }
 </style>
 
-<div class="container">
+<div class="container nav-icon">
   <FlatButton on:click={onMenu}>
-    <img class="nav-icon" src={MenuIcon} alt="open navigation" />
+    <MenuIcon alt="open navigation" />
   </FlatButton>
 </div>
 

@@ -1,11 +1,11 @@
 import { HomeIcon, InfoIcon } from 'svelte-feather-icons'
 
 export default [{
-  path: '/',
+  path: '',
   title: 'Home',
   icon: HomeIcon,
 }, {
-  path: '/about',
+  path: 'about',
   title: 'About',
   icon: InfoIcon,
 }]

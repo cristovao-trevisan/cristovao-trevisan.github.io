@@ -3,8 +3,7 @@
 	import Toolbar from './ToolbarMobile.svelte'
 	import Drawer from './Drawer.svelte'
 
-	export let segment
-	$: currentPath = `/${segment || ''}`
+	export let segment = ''
 
 	let menuOpen = false
 	const toggleMenu = () => { menuOpen = !menuOpen }
@@ -17,7 +16,7 @@
 		{#each menuRoutes as { path, icon, title } (path)}
 			<a
 				href={path} alt={title}
-				class="item-container" class:selected={currentPath === path}
+				class="item-container" class:selected={segment === path}
 				on:click={toggleMenu}
 			>
 				<div class="item-icon"> <svelte:component this={icon} /> </div>

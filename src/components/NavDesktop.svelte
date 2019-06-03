@@ -1,13 +1,12 @@
 <script>
 	import menuRoutes from '../menu-routes'
 
-	export let segment
-	$: currentPath = `/${segment || ''}`
+	export let segment = ''
 </script>
 
 <nav class="container">
 	{#each menuRoutes as { path, icon, title }}
-		<div class="item-container" class:selected={currentPath === path}>
+		<div class="item-container" class:selected={segment === path}>
 		  <a class="item-title" href={path}> {title} </a>
 		</div>
 	{/each}
