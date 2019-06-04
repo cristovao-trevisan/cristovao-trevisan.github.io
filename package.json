@@ -5,8 +5,7 @@
   "scripts": {
     "start": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export --legacy --basepath webpage",
-    "publish": "rm -rf docs && npm run export && cp -r __sapper__/export/webpage docs"
+    "export": "sapper export --legacy --basepath webpage"
   },
   "dependencies": {
     "compression": "^1.7.1",
