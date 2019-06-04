@@ -6,6 +6,7 @@ import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
 import svelte from 'rollup-plugin-svelte'
 import babel from 'rollup-plugin-babel'
+import json from 'rollup-plugin-json'
 import url from 'rollup-plugin-url'
 
 import { terser } from 'rollup-plugin-terser'
@@ -84,6 +85,7 @@ export default {
 				dev
 			}),
 			urlPlugin,
+			json(),
 			resolve(),
 			commonjs()
 		],

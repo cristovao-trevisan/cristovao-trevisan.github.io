@@ -28,7 +28,7 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		margin-top: 8px;
+		margin: 32px 0;
 	}
 
 	.links {
@@ -80,7 +80,6 @@
 	.curiosity {
 		width: 80%;
 		max-width: 500px;
-    margin-bottom: 16px;
     font-style: italic;
 		text-align: center;
 
@@ -99,7 +98,12 @@
 	<div> Trevisan </div>
 </h1>
 
+
+
 <div class="container">
+	<div class="curiosity">
+		{$_('what are you interested in?')}
+	</div>
 	<div class="links">
 		{#each items as { image, title, path } (title)}
 			<a href={path} class="link-container">

@@ -7,12 +7,14 @@ translations.update({
     engineer: 'Engenheiro',
     homePage: 'Página Inicial',
     about: 'Sobre Mim',
+    'what are you interested in?': 'No que você está interessado?',
   },
   en: {
     artist: 'Artist',
     engineer: 'Engineer',
     homePage: 'Home Page',
     about: 'About',
+    'what are you interested in?': 'What are you interested in?',
   },
 })
 
