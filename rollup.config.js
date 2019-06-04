@@ -1,7 +1,8 @@
 import path from 'path'
+import autoprefixer from 'autoprefixer'
 import visualizer from 'rollup-plugin-visualizer'
 import resolve from 'rollup-plugin-node-resolve'
-import autoPreProcess from 'svelte-preprocess'
+import autoPreProcessfrom 'svelte-preprocess'
 import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
 import svelte from 'rollup-plugin-svelte'
@@ -25,6 +26,16 @@ const urlPlugin = url({
 	publicPath: 'client/',
 })
 
+const preprocessOptions = {
+	transformers: {
+		postcss: {
+			plugins: [
+				require("autoprefixer")({ browsers: "last 4 version" })
+			]
+		}
+	}
+}
+
 export default {
 	client: {
 		input: config.client.input(),
@@ -36,7 +47,7 @@ export default {
 			}),
 			svelte({
 				dev,
-				preprocess: autoPreProcess(),
+				preprocess: autoPreProcess(preprocessOptions),
 				hydratable: true,
 				emitCss: true
 			}),
@@ -80,7 +91,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
-				preprocess: autoPreProcess(),
+				preprocess: autoPreProcess(preprocessOptions),
 				generate: 'ssr',
 				dev
 			}),
