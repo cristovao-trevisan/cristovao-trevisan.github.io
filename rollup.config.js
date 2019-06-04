@@ -29,11 +29,9 @@ const urlPlugin = url({
 const preprocessOptions = {
 	transformers: {
 		postcss: {
-			plugins: [
-				require("autoprefixer")({ browsers: "last 4 version" })
-			]
-		}
-	}
+			plugins: [autoprefixer()],
+		},
+	},
 }
 
 export default {
