@@ -1,0 +1,2 @@
+import{_ as t,a as n,b as s,c as a,i,d as u,s as c,S as f,t as o,n as r,k as e,v as l,j as h}from"./chunk.e2f67fb6.js";function d(t){var n;return{c:function(){n=o("test")},l:function(t){n=r(t,"test")},m:function(t,s){e(t,n,s)},p:l,i:l,o:l,d:function(t){t&&h(n)}}}export default(function(o){function r(t){var f;return n(this,r),f=s(this,a(r).call(this)),i(u(f),t,null,d,c,[]),f}return t(r,f),r}());
+//# sourceMappingURL=index.7f6c0ede.js.map

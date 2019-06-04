@@ -8,6 +8,7 @@ const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';
 
 express() // You can also use Express
+	// this will make url base lang work when using the server
 	.use(
 		'/webpage/lang/:lang*',
 		(req, res) => {
