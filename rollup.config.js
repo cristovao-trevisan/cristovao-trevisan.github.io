@@ -1,4 +1,5 @@
 import path from 'path'
+import visualizer from 'rollup-plugin-visualizer'
 import resolve from 'rollup-plugin-node-resolve'
 import autoPreProcess from 'svelte-preprocess'
 import commonjs from 'rollup-plugin-commonjs'
@@ -59,9 +60,11 @@ export default {
 				]
 			}),
 
-			// !dev && terser({
-			// 	module: true
-			// })
+			!dev && terser({
+				module: true
+			}),
+
+			visualizer()
 		],
 
 		onwarn,

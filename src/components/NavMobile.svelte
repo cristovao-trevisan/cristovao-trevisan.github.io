@@ -1,4 +1,5 @@
 <script>
+	import { _ } from 'svelte-intl'
 	import Toolbar from './ToolbarMobile.svelte'
 	import Drawer from './Drawer.svelte'
 
@@ -18,12 +19,12 @@
 	<nav class="container">
 		{#each routes as { path, icon, title } (path)}
 			<a
-				href={`${basepath}/${path}`} alt={title}
+				href={`${basepath}/${path}`}
 				class="item-container" class:selected={path === parsedSegment}
 				on:click={toggleMenu}
 			>
 				<div class="item-icon"> <svelte:component this={icon} /> </div>
-				<div class="item-title" href={path}> {title} </div>
+				<div class="item-title" href={path}> {$_(title)} </div>
 			</a>
 		{/each}
 	</nav>

@@ -21,9 +21,21 @@ body:after {
 }
 
 #sapper {
-	flex: 1
+	flex: 1;
+	overflow: auto;
 }
 
 a {
 	color: inherit;
+}
+
+@font-face {
+  font-family:"Street Slab";
+  src:
+    url("fonts/street-slab/STRSL___.eot?") format("eot"),
+    url("fonts/street-slab/STRSL___.woff") format("woff"),
+    url("fonts/street-slab/STRSL___.ttf") format("truetype"),
+    url("fonts/street-slab/STRSL___.svg#StreetSlab") format("svg");
+  font-weight:normal;
+  font-style:normal;
 }

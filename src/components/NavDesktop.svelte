@@ -1,4 +1,6 @@
 <script>
+	import { _ } from 'svelte-intl'
+
 	export let routes = []
 	export let segment = ''
 	export let basepath = ''
@@ -9,7 +11,7 @@
 <nav class="container">
 	{#each routes as { path, icon, title }}
 		<div class="item-container" class:selected={parsedSegment === path}>
-		  <a class="item-title" href={`${basepath}/${path}`}> {title} </a>
+		  <a class="item-title" href={`${basepath}/${path}`}> {$_(title)} </a>
 		</div>
 	{/each}
 </nav>
