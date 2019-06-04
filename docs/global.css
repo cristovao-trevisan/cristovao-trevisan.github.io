@@ -5,6 +5,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	display: flex;
 }
 
 body:after {
@@ -16,9 +17,25 @@ body:after {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: -999;
+	pointer-events: none;
+}
+
+#sapper {
+	flex: 1;
+	overflow: auto;
 }
 
 a {
 	color: inherit;
+}
+
+@font-face {
+  font-family:"Street Slab";
+  src:
+    url("fonts/street-slab/STRSL___.eot?") format("eot"),
+    url("fonts/street-slab/STRSL___.woff") format("woff"),
+    url("fonts/street-slab/STRSL___.ttf") format("truetype"),
+    url("fonts/street-slab/STRSL___.svg#StreetSlab") format("svg");
+  font-weight:normal;
+  font-style:normal;
 }
