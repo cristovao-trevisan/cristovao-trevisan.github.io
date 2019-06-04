@@ -108,7 +108,7 @@
 		{/each}
 	</div>
 
-		{#if $locale === 'en'}
+	{#if $locale === 'en'}
 		<div class="english-curiosity">
 			Cristóvão is a direct reference to Christopher
 			(<code>'Cristóvão Colombo' = 'Christopher Columbus'</code>),
