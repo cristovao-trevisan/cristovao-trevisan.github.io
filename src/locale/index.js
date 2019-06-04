@@ -84,5 +84,17 @@ translations.update({
   },
 })
 
-locale.set(getBrowserLocale('pt'))
+const getLocale = () => {
+  if (typeof window !== 'undefined') {
+    const searchRegex = /lang=([^&]+)(&|$)/
+    const { search } = window.location
+    if (searchRegex.test(search)) {
+      return searchRegex.exec(search)[1]
+    }
+  }
+
+  return getBrowserLocale('pt')
+}
+
+locale.set(getLocale())
 // locale.set('pt')
