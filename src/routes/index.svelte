@@ -65,18 +65,19 @@
 		top: 0;
 		left: 0;
 		object-fit: contain;
-		opacity: 0.6;
+		opacity: 0.7;
 	}
 
 	.link-text {
 		font-weight: bold;
 		z-index: 1;
 		color: white;
-		font-size: 38px;
-		text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Street Slab';
+		font-size: 42px;
+		text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.4);
 	}
 
-	.english-curiosity {
+	.curiosity {
 		width: 80%;
 		max-width: 500px;
     margin-bottom: 16px;
@@ -109,7 +110,7 @@
 	</div>
 
 	{#if $locale === 'en'}
-		<div class="english-curiosity">
+		<div class="curiosity">
 			Cristóvão is a direct reference to Christopher
 			(<code>'Cristóvão Colombo' = 'Christopher Columbus'</code>),
 			so feel free to call me Chris.
