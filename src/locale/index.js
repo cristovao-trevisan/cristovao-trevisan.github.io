@@ -15,7 +15,7 @@ translations.update({
         por música e desenvolvimento (principalmente web, com foco em front com componentização).
         <br />
         Também me aventuro no mundo de empreendedorismo, com a startup
-        <a href="reactivehub.io" target="_blank"> reactivehub.io </a>.
+        <a href="https://reactivehub.io" target="_blank"> reactivehub.io </a>.
         <br />
         <br />
         Se quer conhecer alguns trabalhos interessantes meus, estão todos no GitHub:
@@ -55,7 +55,7 @@ translations.update({
         with music and programming (mostly web, more focused on frontend componentization).
         <br />
         Also an entrepreneur, CTO at a startup called 
-        <a href="reactivehub.io" target="_blank"> reactivehub.io </a>.
+        <a href="https://reactivehub.io" target="_blank"> reactivehub.io </a>.
         <br />
         <br />
         If you're interested in a few cool projects of mine, here they are:
