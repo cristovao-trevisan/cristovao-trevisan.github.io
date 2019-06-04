@@ -1,17 +1,17 @@
-<!-- <script context="module">
+<script context="module">
 	export async function preload(page, session) {
 		const { lang } = page.query
 		return { lang }
 	}
-</script> -->
+</script>
 
 <script>
   import '../locale'
   import { locale } from 'svelte-intl'
 
   export let segment = ''
-  // export let lang
-  // lang && locale.set(lang)
+  export let lang
+  lang && locale.set(lang)
 </script>
 
 <slot></slot>
