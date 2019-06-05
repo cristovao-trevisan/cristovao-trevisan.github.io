@@ -13,6 +13,7 @@
 
 <style>
   .button {
+    cursor: pointer;
     position: relative;
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;

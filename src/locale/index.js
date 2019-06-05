@@ -8,6 +8,8 @@ translations.update({
     homePage: 'Página Inicial',
     about: 'Sobre Mim',
     gallery: 'Galeria',
+    personal: 'Pessoal',
+    'invisivel-cordao': 'Invisível Cordão',
     'what are you interested in?': 'No que você está interessado?',
     engineerPage: {
       'Follow me on GitHub!': 'Me siga no GitHub!',
@@ -49,6 +51,8 @@ translations.update({
     homePage: 'Home Page',
     about: 'About',
     gallery: 'Gallery',
+    personal: 'Personal',
+    'invisivel-cordao': '"Invisível Cordão"',
     'what are you interested in?': 'What are you interested in?',
     engineerPage: {
       'Follow me on GitHub!': 'Follow me on GitHub!',
