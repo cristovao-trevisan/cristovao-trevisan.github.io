@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "index.edc0277e.css",
+  "sources": [
+    "../../../../../../../src/components/Video.svelte",
+    "../../../../../../../src/routes/artist/index.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let src\n  export let title\n\n  export let width\n  export let maxWidth\n  export let ratio = 16/9\n</script>\n\n<div style=\"width: {width}; max-width: {maxWidth}\">\n  <div class=\"video-container\" style=\"padding-bottom: {100/ratio}%\">\n    <iframe title={title} width=\"560\" height=\"315\" src={src} frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n  </div>\n</div>\n\n<style>\n\t.video-container {\n\t\tposition: relative;\n    overflow: hidden;\n\t}\n\n\t.video-container iframe {\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t}\n</style>\n",
+    "<script>\n\timport { _ } from 'svelte-intl'\n\timport Video from '../../components/Video.svelte'\n</script>\n\n<style lang=\"scss\">.container {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  margin-top: 16px; }</style>\n\n<svelte:head>\n\t<title> Cristóvão Trevisan - {$_('artist')} </title>\n</svelte:head>\n\n<div class=\"container\">\n\t<Video\n\t\ttitle=\"Pra Todo Adams\"\n\t\twidth=\"80%\"\n\t\tmaxWidth=\"800px\"\n\t\tsrc=\"https://www.youtube.com/embed/pqIhL_pHFgE\"\n\t/>\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAgBC,gBAAgB,eAAC,CAAC,AACjB,QAAQ,CAAE,QAAQ,CAChB,QAAQ,CAAE,MAAM,AACnB,CAAC,AAED,+BAAgB,CAAC,MAAM,eAAC,CAAC,AACxB,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,AACb,CAAC;ACtBiB,UAAU,eAAC,CAAC,AAC7B,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,cAAc,CAAE,MAAM,CACtB,UAAU,CAAE,IAAI,AAAE,CAAC"
+}
