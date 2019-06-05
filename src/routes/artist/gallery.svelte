@@ -20,12 +20,25 @@
   ]
 
   let selected = null
+  let selectedIndex = -1
   let images = pictures.map(() => {})
 
-  const selectPicture = picture => () => { selected = picture }
+  const selectPicture = (picture, index) => () => {
+    selected = picture
+    selectedIndex = index
+  }
   const removeSelection = () => { selected = null }
   const handleKeydown = (e) => {
     if (e.key === 'Escape') removeSelection()
+    else if (selected) {
+      if (e.key === 'ArrowRight' && selectedIndex < pictures.length - 1) {
+        selectedIndex += 1
+        selected = pictures[selectedIndex]
+      } else if (e.key === 'ArrowLeft' && selectedIndex > 0) {
+        selectedIndex -= 1
+        selected = pictures[selectedIndex]
+      }
+    }
   }
 
   const loadImageDataSrc = image => image.setAttribute('src', image.getAttribute('data-src'))
@@ -46,7 +59,7 @@
 
 <div class="container">
   {#each pictures as picture, index (picture)}
-    <div class="image-container" on:click={selectPicture(picture)}>
+    <div class="image-container" on:click={selectPicture(picture, index)}>
       <img
         src="{basepath}/blur/{picture}"
         data-src="{basepath}/400px/{picture}"
