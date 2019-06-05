@@ -7,6 +7,7 @@ translations.update({
     engineer: 'Engenheiro',
     homePage: 'Página Inicial',
     about: 'Sobre Mim',
+    gallery: 'Galeria',
     'what are you interested in?': 'No que você está interessado?',
     engineerPage: {
       'Follow me on GitHub!': 'Me siga no GitHub!',
@@ -47,6 +48,7 @@ translations.update({
     engineer: 'Engineer',
     homePage: 'Home Page',
     about: 'About',
+    gallery: 'Gallery',
     'what are you interested in?': 'What are you interested in?',
     engineerPage: {
       'Follow me on GitHub!': 'Follow me on GitHub!',

@@ -94,11 +94,8 @@
 </svelte:head>
 
 <h1 class="title">
-	<div> Cristóvão </div>
-	<div> Trevisan </div>
+	Cristóvão <br /> Trevisan
 </h1>
-
-
 
 <div class="container">
 	<div class="curiosity">
@@ -106,7 +103,7 @@
 	</div>
 	<div class="links">
 		{#each items as { image, title, path } (title)}
-			<a href={path} class="link-container">
+			<a rel=prefetch href={path} class="link-container">
 				<img class="link-image" src={image} alt={$_(title)} />
 				<div class="link-text"> {$_(title)} </div>
 			</a>

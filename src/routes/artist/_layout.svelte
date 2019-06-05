@@ -5,7 +5,7 @@
 	import routes from './_menu-routes'
 
 	export let segment;
-	const basepath = 'actor'
+	const basepath = 'artist'
 </script>
 
 <DimensionAware

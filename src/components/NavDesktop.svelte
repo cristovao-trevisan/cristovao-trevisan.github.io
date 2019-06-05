@@ -11,7 +11,7 @@
 <nav class="container">
 	{#each routes as { path, icon, title }}
 		<div class="item-container" class:selected={parsedSegment === path}>
-		  <a class="item-title" href={`${basepath}/${path}`}> {$_(title)} </a>
+		  <a rel=prefetch class="item-title" href={`${basepath}/${path}`}> {$_(title)} </a>
 		</div>
 	{/each}
 </nav>
@@ -36,6 +36,8 @@
 	}
 
 	.item-title {
+		font-family: 'Street Slab';
+		text-decoration: none;
 	}
 	.selected::after {
 		content: '';

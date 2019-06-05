@@ -9,10 +9,16 @@
 </script>
 
 <style lang="scss">
+  .margin {
+    margin: 8px;
+  }
   .container {
-    width: calc(100% - 16Spx);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     border: 0;
-    padding: 8px;
   }
 
   .nav-icon {
@@ -23,9 +29,14 @@
   }
 </style>
 
-<div class="container nav-icon">
-  <FlatButton on:click={onMenu}>
-    <MenuIcon alt="open navigation" />
-  </FlatButton>
+<div class="margin">
+  <div class="container nav-icon">
+    <slot />
+
+    <FlatButton on:click={onMenu}>
+      <MenuIcon alt="open navigation" />
+    </FlatButton>
+  </div>
 </div>
+
 

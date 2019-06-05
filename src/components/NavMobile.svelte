@@ -8,17 +8,23 @@
 	export let basepath = ''
 
 	$: parsedSegment = segment === '/' ? '' : (segment || '')
+	$: currentRoute = routes.find(route => route.path === parsedSegment)
 
 	let menuOpen = false
 	const toggleMenu = () => { menuOpen = !menuOpen }
 </script>
 
-<Toolbar on:menu={toggleMenu} />
+<Toolbar on:menu={toggleMenu}>
+	<div class="page-title">
+		{$_(currentRoute.title)}
+	</div>
+</Toolbar>
 
 <Drawer open={menuOpen} on:close={toggleMenu}>
-	<nav class="container">
+	<nav class="container noise">
 		{#each routes as { path, icon, title } (path)}
 			<a
+				rel=prefetch
 				href={`${basepath}/${path}`}
 				class="item-container" class:selected={path === parsedSegment}
 				on:click={toggleMenu}
@@ -33,6 +39,13 @@
 <style lang="scss">
 	@import '../style/colors.scss';
 
+	.page-title {
+		font-family: 'Street Slab';
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		font-size: 28px;
+	}
 	.container {
 		margin-top: 24px;
 		display: flex;
@@ -48,6 +61,7 @@
 		width: fit-content;
 		padding: 8px;
 		color: nth($blue, 1);
+		text-decoration: none;
 
 		&.selected {
 			color: nth($gray, 1);

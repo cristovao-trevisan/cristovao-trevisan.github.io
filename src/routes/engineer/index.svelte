@@ -12,6 +12,34 @@
   }]
 </script>
 
+<svelte:head>
+	<title> Cristóvão Trevisan - {$_('artist')} </title>
+</svelte:head>
+
+<div class="container">
+  <div class="title">
+    Cristóvão Trevisan
+  </div>
+  <div class="text" style="margin-top: 40px; margin-bottom: 16px;">
+    {@html $_('engineerPage.presentation')}
+  </div>
+  <div class="subtitle" style="margin: 16px 0;">
+    {$_('engineerPage.Follow me on GitHub!')}
+  </div>
+
+  <SocialNetwork
+    icon={GithubIcon}
+    title='cristovao-trevisan'
+    path='https://github.com/cristovao-trevisan'
+  />
+
+  <div class="social-networks">
+    {#each socialNetworks as item (item.path)}
+      <SocialNetwork {...item} />
+    {/each}
+  </div>
+</div>
+
 <style lang="scss">
   @import '../../style/colors.scss';
   .container {
@@ -47,27 +75,3 @@
     flex-wrap: wrap;
   }
 </style>
-
-<div class="container">
-  <div class="title">
-    Cristóvão Trevisan
-  </div>
-  <div class="text" style="margin-top: 40px; margin-bottom: 16px;">
-    {@html $_('engineerPage.presentation')}
-  </div>
-  <div class="subtitle" style="margin: 16px 0;">
-    {$_('engineerPage.Follow me on GitHub!')}
-  </div>
-
-  <SocialNetwork
-    icon={GithubIcon}
-    title='cristovao-trevisan'
-    path='https://github.com/cristovao-trevisan'
-  />
-
-  <div class="social-networks">
-    {#each socialNetworks as item (item.path)}
-      <SocialNetwork {...item} />
-    {/each}
-  </div>
-</div>
