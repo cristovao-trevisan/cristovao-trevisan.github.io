@@ -8,7 +8,7 @@
 
 <div class="container">
   {#each albuns as { title, folder, cover } (title)}
-    <a class="item-container hoverlay" href="artist/gallery/album/{title}">
+    <a rel=prefetch class="item-container hoverlay" href="artist/gallery/album/{title}">
       <div class="image-container">
         <AsyncImage
           initial="{folder}/blur/{cover}"
