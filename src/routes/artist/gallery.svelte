@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte'
 
+
   const basepath = 'img/pictures-2019-06-04'
   const listPath = '400px'
   const qualityPath = '2048px'
@@ -27,11 +28,8 @@
     if (e.key === 'Escape') removeSelection()
   }
 
-  onMount(() => {
-    images.forEach((image) => {
-      image.setAttribute('src', image.getAttribute('data-src'))
-    })
-  })
+  const loadImageDataSrc = image => image.setAttribute('src', image.getAttribute('data-src'))
+  onMount(() => images.forEach(loadImageDataSrc))
 </script>
 
 <svelte:window on:keydown={handleKeydown}/>
@@ -39,9 +37,9 @@
 {#if selected}
   <div class="overlay">
     <div class="overlay-container">
-      <img style="position: absolute" src="{basepath}/blur/{selected}" alt="loading" />
-      <img src="{basepath}/2048px/{selected}" alt="high resolution picture" />
       <div class="overlay-mask" on:click={removeSelection} />
+      <img style="position: absolute; width: 78%;" src="{basepath}/blur/{selected}" alt="loading" />
+      <img src="{basepath}/2048px/{selected}" alt="high resolution picture" />
     </div>
   </div>
 {/if}
@@ -49,7 +47,12 @@
 <div class="container">
   {#each pictures as picture, index (picture)}
     <div class="image-container" on:click={selectPicture(picture)}>
-      <img src="{basepath}/blur/{picture}" data-src="{basepath}/400px/{picture}" alt="picture-{index}" bind:this={images[index]} />
+      <img
+        src="{basepath}/blur/{picture}"
+        data-src="{basepath}/400px/{picture}"
+        alt="picture-{index}"
+        bind:this={images[index]}
+      />
     </div>
   {/each}
 </div>
