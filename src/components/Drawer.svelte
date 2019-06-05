@@ -6,12 +6,13 @@
 
   const onClose = () => dispatch('close')
 </script>
-{#if open}
+
+<div hidden={!open} >
 	<div class="overlay mask" on:click={onClose} />
 	<div class="overlay container">
 		<slot />
 	</div>
-{/if}
+</div>
 
 <style>
 	.overlay {
