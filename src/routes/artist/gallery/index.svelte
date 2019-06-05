@@ -8,7 +8,7 @@
 
 <div class="container">
   {#each albuns as { title, folder, cover } (title)}
-    <a class="item-container" href="artist/gallery/album/{title}">
+    <a class="item-container hoverlay" href="artist/gallery/album/{title}">
       <div class="image-container">
         <AsyncImage
           initial="{folder}/blur/{cover}"
@@ -25,13 +25,16 @@
   @import '../../../style/shadows.scss';
 
   .item-container {
+    margin-bottom: 8px;
+    position: relative;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     align-items: center;
   }
+  
   .image-container {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     width: 200px;
     height: 200px;
     box-shadow: $shadow-2;

@@ -52,7 +52,7 @@
 
 <div class="container">
   {#each pictures as picture, index (picture)}
-    <div class="image-container" on:click={selectPicture(picture, index)}>
+    <div class="image-container hoverlay" on:click={selectPicture(picture, index)}>
       <AsyncImage
         initial="{folder}/blur/{picture}"
         src="{folder}/400px/{picture}"
@@ -72,6 +72,7 @@
     margin-top: 16px;
   }
   .image-container {
+    position: relative;
     margin-bottom: 8px;
     width: calc(50% - 16px);
     max-width: 200px;
