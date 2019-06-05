@@ -1,46 +1,26 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<script>
+	import { _ } from 'svelte-intl'
+	import Video from '../../components/Video.svelte'
+</script>
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 200px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
+<style lang="scss">
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 16px;
 	}
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title> Cristóvão Trevisan - {$_('artist')} </title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="container">
+	<Video
+		title="Pra Todo Adams"
+		width="80%"
+		maxWidth="800px"
+		src="https://www.youtube.com/embed/pqIhL_pHFgE"
+	/>
+</div>
