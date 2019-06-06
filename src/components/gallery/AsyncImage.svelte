@@ -1,22 +1,22 @@
 <script>
-  import { onMount, createEventDispatcher } from 'svelte'
+  import { createEventDispatcher } from 'svelte'
 
   export let initial
   export let src
   export let alt
 
-  let image
-
-  const loadImage = () => image.setAttribute('src', image.getAttribute('data-src'))
-  onMount(loadImage)
+  const loadImage = (e) => {
+    const image = e.target
+    image.setAttribute('src', image.getAttribute('data-src'))
+  }
 </script>
 
 <div class="container">
   <img
+    on:load={loadImage}
     src={initial}
     data-src={src}
     alt={alt}
-    bind:this={image}
   />
 </div>
 
