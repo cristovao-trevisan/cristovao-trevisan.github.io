@@ -11,6 +11,7 @@ translations.update({
     personal: 'Pessoal',
     'invisivel-cordao': 'Invisível Cordão',
     'what are you interested in?': 'No que você está interessado?',
+    album: 'Albúm {title}',
     engineerPage: {
       'Follow me on GitHub!': 'Me siga no GitHub!',
       presentation: `
@@ -54,10 +55,11 @@ translations.update({
     personal: 'Personal',
     'invisivel-cordao': '"Invisível Cordão"',
     'what are you interested in?': 'What are you interested in?',
+    album: '{title} Album',
     engineerPage: {
       'Follow me on GitHub!': 'Follow me on GitHub!',
       presentation: `
-        Hi, my name is Cristóvão Trevisan (Chris). I'm a electronics engineer excited in love
+        Hi, my name is Cristóvão Trevisan (Chris). I'm a electronics engineer in love
         with music and programming (mostly web, more focused on frontend componentization).
         <br />
         Also an entrepreneur, CTO at a startup called 
