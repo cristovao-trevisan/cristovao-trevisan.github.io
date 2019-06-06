@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title> Cristóvão Trevisan - {$_('artist')} </title>
+	<title> Cristóvão Trevisan - {$_('engineer')} </title>
 </svelte:head>
 
 <div class="container">
