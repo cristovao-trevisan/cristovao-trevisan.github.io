@@ -2,6 +2,7 @@
 	import { _ } from 'svelte-intl'
 	import Toolbar from './ToolbarMobile.svelte'
 	import Drawer from './Drawer.svelte'
+	import LanguageSelector from './LanguageSelector.svelte'
 
 	export let segment = ''
 	export let routes = []
@@ -34,6 +35,9 @@
 			</a>
 		{/each}
 	</nav>
+	<div class="language-container">
+		<LanguageSelector />
+	</div>
 </Drawer>
 
 <style lang="scss">
@@ -78,4 +82,11 @@
 	.item-title {
 	}
 
+	.language-container {
+		position: absolute;
+		bottom: 10px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 </style>
