@@ -1,5 +1,5 @@
 <script>
-	import { _ } from 'svelte-intl'
+	import { _ } from 'svelte-3-intl'
 	import Video from '../../components/Video.svelte'
 </script>
 

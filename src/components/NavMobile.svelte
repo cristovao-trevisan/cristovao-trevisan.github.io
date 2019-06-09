@@ -1,5 +1,5 @@
 <script>
-	import { _ } from 'svelte-intl'
+	import { _ } from 'svelte-3-intl'
 	import Toolbar from './ToolbarMobile.svelte'
 	import Drawer from './Drawer.svelte'
 	import LanguageSelector from './LanguageSelector.svelte'

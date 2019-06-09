@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "format-message": "^6.2.1",
     "polka": "^0.5.0",
-    "svelte-intl": "^0.1.0"
+    "svelte-3-intl": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

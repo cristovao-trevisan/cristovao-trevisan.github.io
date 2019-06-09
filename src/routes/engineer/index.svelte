@@ -1,5 +1,5 @@
 <script>
-  import { _ } from 'svelte-intl'
+  import { _ } from 'svelte-3-intl'
   import SocialNetwork from '../../components/SocialNetwork.svelte'
   import { LinkedinIcon, GithubIcon, TwitterIcon } from 'svelte-feather-icons'
 

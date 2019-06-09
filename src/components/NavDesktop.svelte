@@ -1,5 +1,5 @@
 <script>
-	import { _ } from 'svelte-intl'
+	import { _ } from 'svelte-3-intl'
 
 	export let routes = []
 	export let segment = ''
