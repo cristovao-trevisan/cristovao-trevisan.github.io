@@ -17,7 +17,7 @@ translations.update({
     artistPage: {
       presentation: `
         Olá, meu nome é <i> Cristóvão Trevisan </i>.
-        Estou agora começando minha carreira artísta, e meu
+        Estou agora começando minha carreira artística, e meu
         objetivo é no ramo do <b> Teatro Musical </b>!!!
         <br /> <br />
       `,
