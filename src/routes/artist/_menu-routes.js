@@ -1,4 +1,4 @@
-import { HomeIcon, ImageIcon, VideoIcon } from 'svelte-feather-icons'
+import { HomeIcon, ImageIcon, VideoIcon, FileTextIcon } from 'svelte-feather-icons'
 
 export default [{
   path: '',
@@ -12,4 +12,8 @@ export default [{
   path: 'videos',
   title: 'videos',
   icon: VideoIcon,
+}, {
+  path: 'curriculum',
+  title: 'curriculum',
+  icon: FileTextIcon,
 }]

@@ -2,7 +2,10 @@
 	import { _ } from 'svelte-3-intl'
 	import AsyncImage from '../../components/gallery/AsyncImage.svelte'
 	import SocialNetwork from '../../components/SocialNetwork.svelte'
-  import { InstagramIcon} from 'svelte-feather-icons'
+	import { InstagramIcon} from 'svelte-feather-icons'
+	import menuRoutes from './_menu-routes'
+
+	const links = menuRoutes.slice(1)
 </script>
 
 <style lang="scss">
@@ -20,6 +23,8 @@
 	.image {
 		width: 50%;
 		max-width: 200px;
+		border-radius: 8px;
+		overflow: hidden;
 	}
 	.presentation {
 		margin: 16px;
@@ -53,16 +58,13 @@
 		{@html $_('artistPage.linksIntroduction')}
 
 		<ul>
-			<li>
-				<a rel=prefetch href="artist/videos">
-					{$_('videos')}
-				</a>
-			</li>
-			<li>
-				<a rel=prefetch href="artist/gallery">
-					{$_('gallery')}
-				</a>
-			</li>
+			{#each links as { path, title } (path)}
+				<li>
+					<a rel=prefetch href="artist/{path}">
+						{$_(title)}
+					</a>
+				</li>
+			{/each}
 		</ul>
 	</div>
 </div>

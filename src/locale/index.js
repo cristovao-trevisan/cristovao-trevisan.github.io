@@ -9,6 +9,7 @@ translations.update({
     about: 'Sobre Mim',
     gallery: 'Galeria',
     videos: 'Vídeos',
+    curriculum: 'Currículo',
     personal: 'Pessoal',
     'invisivel-cordao': 'Invisível Cordão',
     'what are you interested in?': 'No que você está interessado?',
@@ -22,7 +23,7 @@ translations.update({
       `,
       linksIntroduction: `
         Se você chegou aqui provavelmente já sabia disso e quer
-        conferir alguns materiais meus. Para isso basta navegar nos links acima,
+        conferir alguns materiais meus. Para isso basta navegar no menu acima,
         ou aqui também:
       `,
     },
@@ -63,10 +64,11 @@ translations.update({
   en: {
     artist: 'Artist',
     engineer: 'Engineer',
-    homePage: 'Home Page',
+    homePage: 'Home',
     about: 'About',
     gallery: 'Gallery',
     videos: 'Videos',
+    curriculum: 'Curriculum',
     personal: 'Personal',
     'invisivel-cordao': '"Invisível Cordão"',
     'what are you interested in?': 'What are you interested in?',
