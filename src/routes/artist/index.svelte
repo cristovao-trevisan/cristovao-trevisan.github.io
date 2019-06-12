@@ -1,14 +1,37 @@
 <script>
 	import { _ } from 'svelte-3-intl'
-	import Video from '../../components/Video.svelte'
+	import AsyncImage from '../../components/gallery/AsyncImage.svelte'
+	import SocialNetwork from '../../components/SocialNetwork.svelte'
+  import { InstagramIcon} from 'svelte-feather-icons'
 </script>
 
 <style lang="scss">
 	.container {
 		display: flex;
 		align-items: center;
-		flex-direction: column;
+		justify-content: center;
 		margin-top: 16px;
+		margin-left: 10%;
+		width: 80%;
+		text-align: justify;
+		max-width: 1024px;
+		flex-wrap: wrap;
+	}
+	.image {
+		width: 50%;
+		max-width: 200px;
+	}
+	.presentation {
+		margin: 16px;
+		width: 50%;
+		max-width: 800px;
+		min-width: 300px;
+	}
+	.social-networks {
+		display: flex;
+		justify-content: center;
+		margin: 16px 10%;
+		width: 80%;
 	}
 </style>
 
@@ -17,10 +40,37 @@
 </svelte:head>
 
 <div class="container">
-	<Video
-		title="Pra Todo Adams"
-		width="80%"
-		maxWidth="800px"
-		src="https://www.youtube.com/embed/pqIhL_pHFgE"
+	<div class="image">
+		<AsyncImage
+			initial="img/pictures-2019-06-04/blur/_ANA1931.jpg"
+			src="img/pictures-2019-06-04/400px/_ANA1931.jpg"
+			alt="Cristóvão Trevisan"
+		/>
+	</div>
+
+	<div class="presentation">
+		{@html $_('artistPage.presentation')}
+		{@html $_('artistPage.linksIntroduction')}
+
+		<ul>
+			<li>
+				<a rel=prefetch href="artist/videos">
+					{$_('videos')}
+				</a>
+			</li>
+			<li>
+				<a rel=prefetch href="artist/gallery">
+					{$_('gallery')}
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="social-networks">
+	<SocialNetwork
+		icon={InstagramIcon}
+		path="https://www.instagram.com/cristovao_trevisan"
+		title="cristovao_trevisan"
 	/>
 </div>

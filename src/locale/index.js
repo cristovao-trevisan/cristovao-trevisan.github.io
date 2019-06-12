@@ -8,10 +8,24 @@ translations.update({
     homePage: 'Página Inicial',
     about: 'Sobre Mim',
     gallery: 'Galeria',
+    videos: 'Vídeos',
     personal: 'Pessoal',
     'invisivel-cordao': 'Invisível Cordão',
     'what are you interested in?': 'No que você está interessado?',
     album: 'Albúm {title}',
+    artistPage: {
+      presentation: `
+        Olá, meu nome é <i> Cristóvão Trevisan </i>.
+        Estou agora começando minha carreira artísta, e meu
+        objetivo é no ramo do <b> Teatro Musical </b>!!!
+        <br /> <br />
+      `,
+      linksIntroduction: `
+        Se você chegou aqui provavelmente já sabia disso e quer
+        conferir alguns materiais meus. Para isso basta navegar nos links acima,
+        ou aqui também:
+      `,
+    },
     engineerPage: {
       'Follow me on GitHub!': 'Me siga no GitHub!',
       presentation: `
@@ -52,10 +66,24 @@ translations.update({
     homePage: 'Home Page',
     about: 'About',
     gallery: 'Gallery',
+    videos: 'Videos',
     personal: 'Personal',
     'invisivel-cordao': '"Invisível Cordão"',
     'what are you interested in?': 'What are you interested in?',
     album: '{title} Album',
+    artistPage: {
+      presentation: `
+        Hello, my name is <i> Cristóvão Trevisan </i>.
+        I'm now beginning my artistic career, with the
+        goal to become a <b> Musical Theatre Actor </b>!!!
+        <br /> <br />
+      `,
+      linksIntroduction: `
+        If you are here you probably know that already, and want to check out
+        a some content of mine. For that, just use the menu above to navigate,
+        or the links bellow:
+      `,
+    },
     engineerPage: {
       'Follow me on GitHub!': 'Follow me on GitHub!',
       presentation: `
