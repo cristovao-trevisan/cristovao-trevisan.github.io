@@ -2,6 +2,7 @@ rm -rf docs
 npm run export
 
 cp -r __sapper__/export/webpage docs
+cp -r static/**/*.pdf docs
 
 # add .nojekyll to every docs subfolder
 for D in `find docs -type d`
