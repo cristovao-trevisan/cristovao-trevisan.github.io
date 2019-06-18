@@ -14,6 +14,7 @@
 
 <svelte:head>
 	<title> Cristóvão Trevisan - {$_('engineer')} </title>
+	<meta name="Description" content="{$_('metaDescription')}, {$_('engineerPage.metaDescription')}">
 </svelte:head>
 
 <div class="container">

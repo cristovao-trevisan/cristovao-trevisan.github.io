@@ -7,16 +7,16 @@
 
 <script>
   import '../locale'
-  import { locale } from 'svelte-intl'
+  import { locale, _ } from 'svelte-intl'
 
   export let segment = ''
   export let lang
   lang && locale.set(lang)
 </script>
 
-<slot></slot>
-<!-- <svelte:head>
-  {#each locales as locale}
-    <link rel="alternate" hreflang={locale} href={`${segment}?lang=${locale}`} />
-  {/each}
-</svelte:head> -->
+<svelte:head>
+	<meta name="Description" content={$_('metaDescription')}>
+</svelte:head>
+
+<slot />
+

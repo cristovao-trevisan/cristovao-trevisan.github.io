@@ -20,6 +20,7 @@
 	}
 
 	.video-container iframe {
+		background-color: #0002;
 		position: absolute;
 		top: 0;
 		left: 0;

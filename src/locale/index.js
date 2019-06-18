@@ -14,7 +14,9 @@ translations.update({
     'invisivel-cordao': 'Invisível Cordão',
     'what are you interested in?': 'No que você está interessado?',
     album: 'Albúm {title}',
+    metaDescription: 'Este é meu site pessoal',
     artistPage: {
+      metaDescription: 'sobre mim como artista',
       presentation: `
         Olá, meu nome é <i> Cristóvão Trevisan </i>.
         Estou agora começando minha carreira artística, e meu
@@ -28,6 +30,7 @@ translations.update({
       `,
     },
     engineerPage: {
+      metaDescription: 'sobre mim como engenheiro',
       'Follow me on GitHub!': 'Me siga no GitHub!',
       presentation: `
         Olá, meu nome é Cristóvão Trevisan. Sou engenheiro eletrônico apaixonado
@@ -73,7 +76,9 @@ translations.update({
     'invisivel-cordao': '"Invisível Cordão"',
     'what are you interested in?': 'What are you interested in?',
     album: '{title} Album',
+    metaDescription: 'This is my personal website',
     artistPage: {
+      metaDescription: 'sobre mim como artista',
       presentation: `
         Hello, my name is <i> Cristóvão Trevisan </i>.
         I'm now beginning my artistic career, with the
@@ -87,6 +92,7 @@ translations.update({
       `,
     },
     engineerPage: {
+      metaDescription: 'about myself as an engineer',
       'Follow me on GitHub!': 'Follow me on GitHub!',
       presentation: `
         Hi, my name is Cristóvão Trevisan (Chris). I'm a electronics engineer in love
