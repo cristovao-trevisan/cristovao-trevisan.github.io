@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cristovao-trevisan.github.io/webpage/</loc>
+    <priority>1</priority>
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://cristovao-trevisan.github.io/webpage/?lang=pt"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cristovao-trevisan.github.io/webpage/?lang=en"
+    />
+  </url>
+
+  <url>
+    <loc>https://cristovao-trevisan.github.io/webpage/artist</loc>
+    <priority>0.95</priority>
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://cristovao-trevisan.github.io/webpage/artist?lang=pt"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cristovao-trevisan.github.io/webpage/artist?lang=en"
+    />
+  </url>
+
+  <url>
+    <loc>https://cristovao-trevisan.github.io/webpage/artist/gallery</loc>
+    <priority>0.9</priority>
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://cristovao-trevisan.github.io/webpage/artist/gallery?lang=pt"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cristovao-trevisan.github.io/webpage/artist/gallery?lang=en"
+    />
+  </url>
+
+  <url>
+    <loc>https://cristovao-trevisan.github.io/webpage/artist/videos</loc>
+    <priority>0.88</priority>
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://cristovao-trevisan.github.io/webpage/artist/videos?lang=pt"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cristovao-trevisan.github.io/webpage/artist/videos?lang=en"
+    />
+  </url>
+
+  <url>
+    <loc>https://cristovao-trevisan.github.io/webpage/artist/curriculum</loc>
+    <priority>0.8</priority>
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://cristovao-trevisan.github.io/webpage/artist/curriculum?lang=pt"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cristovao-trevisan.github.io/webpage/artist/curriculum?lang=en"
+    />
+  </url>
+
+  <url>
+    <loc>https://cristovao-trevisan.github.io/webpage/engineer</loc>
+    <priority>0.95</priority>
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://cristovao-trevisan.github.io/webpage/engineer?lang=pt"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cristovao-trevisan.github.io/webpage/engineer?lang=en"
+    />
+  </url>
+</urlset>
