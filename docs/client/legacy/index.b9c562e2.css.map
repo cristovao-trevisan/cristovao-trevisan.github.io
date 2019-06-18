@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "index.b9c562e2.css",
+  "sources": [
+    "../../../../../../../src/components/Video.svelte",
+    "../../../../../../../src/routes/artist/videos/index.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let src\n  export let title\n\n  export let width\n  export let maxWidth\n  export let ratio = 16/9\n</script>\n\n<div style=\"width: {width}; max-width: {maxWidth}\">\n  <div class=\"video-container\" style=\"padding-bottom: {100/ratio}%\">\n    <iframe title={title} width=\"560\" height=\"315\" src={src} frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n  </div>\n</div>\n\n<style>\n\t.video-container {\n\t\tposition: relative;\n    overflow: hidden;\n\t}\n\n\t.video-container iframe {\n\t\tbackground-color: #0002;\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t}\n</style>\n",
+    "<script>\n\timport { _ } from 'svelte-intl'\n\timport Video from '../../../components/Video.svelte'\n\n  const videos = [{\n    title: 'Pra Todo Adams',\n    link: 'https://www.youtube.com/embed/pqIhL_pHFgE',\n  }, {\n    title: 'Travessia - Milton Nascimento',\n    link: 'https://www.youtube.com/embed/rLntM8zj5U4',\n  }]\n</script>\n\n<style lang=\"scss\">.container {\n  margin-top: 16px; }\n\n.item {\n  margin-bottom: 16px;\n  display: flex;\n  align-items: center;\n  flex-direction: column; }\n\n.title {\n  font-family: Street Slab;\n  width: 80%;\n  max-width: 1024px;\n  margin-bottom: 4px;\n  font-weight: bold;\n  font-size: 14px; }</style>\n\n<svelte:head>\n\t<title> Cristóvão Trevisan - {$_('videos')} </title>\n</svelte:head>\n\n<div class=\"container\">\n  {#each videos as { title, link } (link)}\n    <div class=\"item\">\n      <div class=\"title\"> {title} </div>\n      <Video\n        title={title}\n        width=\"80%\"\n        maxWidth=\"1024px\"\n        src={link}\n      />\n    </div>\n  {/each}\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAgBC,gBAAgB,cAAC,CAAC,AACjB,QAAQ,CAAE,QAAQ,CAChB,QAAQ,CAAE,MAAM,AACnB,CAAC,AAED,8BAAgB,CAAC,MAAM,cAAC,CAAC,AACxB,gBAAgB,CAAE,KAAK,CACvB,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,AACb,CAAC;ACfiB,UAAU,cAAC,CAAC,AAC7B,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,KAAK,cAAC,CAAC,AACL,aAAa,CAAE,IAAI,CACnB,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,cAAc,CAAE,MAAM,AAAE,CAAC,AAE3B,MAAM,cAAC,CAAC,AACN,WAAW,CAAE,MAAM,CAAC,IAAI,CACxB,KAAK,CAAE,GAAG,CACV,SAAS,CAAE,MAAM,CACjB,aAAa,CAAE,GAAG,CAClB,WAAW,CAAE,IAAI,CACjB,SAAS,CAAE,IAAI,AAAE,CAAC"
+}

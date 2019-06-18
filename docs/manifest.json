@@ -1,10 +1,10 @@
 {
-	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"background_color": "#f0ffff",
+	"theme_color": "#f0ffff",
+	"name": "Cristóvão Trevisan - Personal Page",
+	"short_name": "Cristóvão Trevisan",
 	"display": "minimal-ui",
-	"start_url": "/",
+	"start_url": "/webpage",
 	"icons": [
 		{
 			"src": "logo-192.png",

@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "chunk.7fde2cac.css",
+  "sources": [
+    "../../../../../../../src/components/SocialNetwork.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let icon\n  export let path\n  export let title\n</script>\n\n<style>\n  .container {\n    position: relative;\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    display: flex;\n    text-decoration: none;\n    padding: 4px;\n    align-items: center;\n  }\n  .container:hover:after {\n    position: absolute;\n    background-color: white;\n    width: 100%;\n    height: 100%;\n    content: '';\n    opacity: 0.6;\n  }\n\n  .icon {\n    display: flex;\n    align-content: center;\n    align-items: center;\n    justify-content: center;\n  }\n  .title {\n    margin-left: 4px;\n  }\n</style>\n\n<a href={path} class=\"container\" target=\"_blank\">\n  <div class=\"icon\"> <svelte:component this={icon} /> </div>\n  {#if title}\n    <div class=\"title\"> {title} </div>\n  {/if}\n</a>\n"
+  ],
+  "names": [],
+  "mappings": "AAOE,UAAU,eAAC,CAAC,AACV,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,mBAAmB,CAC1B,KAAK,CAAE,gBAAgB,CACvB,KAAK,CAAE,WAAW,CAClB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,IAAI,CACrB,OAAO,CAAE,GAAG,CACZ,WAAW,CAAE,MAAM,AACrB,CAAC,AACD,yBAAU,MAAM,MAAM,AAAC,CAAC,AACtB,QAAQ,CAAE,QAAQ,CAClB,gBAAgB,CAAE,KAAK,CACvB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,EAAE,CACX,OAAO,CAAE,GAAG,AACd,CAAC,AAED,KAAK,eAAC,CAAC,AACL,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,MAAM,CACrB,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,AACzB,CAAC,AACD,MAAM,eAAC,CAAC,AACN,WAAW,CAAE,GAAG,AAClB,CAAC"
+}

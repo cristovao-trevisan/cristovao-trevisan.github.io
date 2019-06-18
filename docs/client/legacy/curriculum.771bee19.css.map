@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "curriculum.771bee19.css",
+  "sources": [
+    "../../../../../../../src/routes/artist/curriculum.svelte"
+  ],
+  "sourcesContent": [
+    "<style>\n  .container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 8px;\n  }\n  object {\n    width: 95%;\n    height: calc(100vh - 80px);\n    max-height: 800px;\n    max-width: 1024px;\n  }\n</style>\n\n<div class=\"container\">\n  <object\n    title=\"curriculo-artistico\"\n    data=\"cristovao-trevisan-curriculo-artistico.pdf\"\n    type=\"application/pdf\"\n  >\n    <a href=\"cristovao-trevisan-curriculo-artistico.pdf\">\n      cristovao-trevisan-curriculo-artistico.pdf\n    </a>\n  </object>\n</div>\n\n"
+  ],
+  "names": [],
+  "mappings": "AACE,UAAU,eAAC,CAAC,AACV,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,GAAG,AACjB,CAAC,AACD,MAAM,eAAC,CAAC,AACN,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,KAAK,KAAK,CAAC,CAAC,CAAC,IAAI,CAAC,CAC1B,UAAU,CAAE,KAAK,CACjB,SAAS,CAAE,MAAM,AACnB,CAAC"
+}
