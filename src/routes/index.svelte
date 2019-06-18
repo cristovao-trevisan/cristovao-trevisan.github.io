@@ -1,5 +1,5 @@
 <script>
-	import { _, locale } from 'svelte-3-intl'
+	import { _, locale } from 'svelte-intl'
 
 	const items = [{
 		path: 'artist',

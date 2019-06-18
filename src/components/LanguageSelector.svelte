@@ -1,5 +1,5 @@
 <script>
-  import { locale, locales } from 'svelte-3-intl'
+  import { locale, locales } from 'svelte-intl'
 
 	const setLocale = e => locale.set(e.target.value)
 </script>

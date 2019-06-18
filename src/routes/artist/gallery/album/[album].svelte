@@ -8,7 +8,7 @@
 </script>
 
 <script>
-  import { _ } from 'svelte-3-intl'
+  import { _ } from 'svelte-intl'
   import { onMount } from 'svelte'
   import AsyncImage from '../../../../components/gallery/AsyncImage.svelte'
   import FullScreenImage from '../../../../components/gallery/FullScreenImage.svelte'

@@ -7,7 +7,7 @@
 
 <script>
   import '../locale'
-  import { locale } from 'svelte-3-intl'
+  import { locale } from 'svelte-intl'
 
   export let segment = ''
   export let lang

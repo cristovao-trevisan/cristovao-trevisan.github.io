@@ -1,5 +1,5 @@
 // @ts-check
-import { locale, getBrowserLocale, translations } from 'svelte-3-intl'
+import { locale, getBrowserLocale, translations } from 'svelte-intl'
 
 translations.update({
   pt: {

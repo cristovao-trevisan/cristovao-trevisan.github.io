@@ -1,5 +1,5 @@
 <script>
-	import { _ } from 'svelte-3-intl'
+	import { _ } from 'svelte-intl'
 	import AsyncImage from '../../components/gallery/AsyncImage.svelte'
 	import SocialNetwork from '../../components/SocialNetwork.svelte'
 	import { InstagramIcon} from 'svelte-feather-icons'
