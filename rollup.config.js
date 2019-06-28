@@ -16,7 +16,6 @@ import pkg from './package.json'
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const legacy = !!process.env.SAPPER_LEGACY_BUILD
-console.log({ legacy })
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && warning.message.includes('/@sapper/')) || onwarn(warning)
 
 const urlPlugin = url({
@@ -46,7 +45,7 @@ export default {
 				dev,
 				preprocess: autoPreProcess(preprocessOptions),
 				hydratable: true,
-				emitCss: false
+				emitCss: !legacy // legacy css linking is broken
 			}),
 			urlPlugin,
 			resolve(),
