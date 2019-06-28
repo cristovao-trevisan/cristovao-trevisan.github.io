@@ -1,4 +1,3 @@
-import path from 'path'
 import autoprefixer from 'autoprefixer'
 import visualizer from 'rollup-plugin-visualizer'
 import resolve from 'rollup-plugin-node-resolve'
