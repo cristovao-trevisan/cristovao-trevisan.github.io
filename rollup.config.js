@@ -45,7 +45,6 @@ export default {
 				dev,
 				preprocess: autoPreProcess(preprocessOptions),
 				hydratable: true,
-				emitCss: !legacy // legacy css linking is broken
 			}),
 			urlPlugin,
 			resolve(),
