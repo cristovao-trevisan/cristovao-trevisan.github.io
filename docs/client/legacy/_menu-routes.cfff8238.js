@@ -1,0 +1,1 @@
+import{H as a,I as i,V as t,F as e}from"./index.af33885b.js";var l=[{path:"",title:"homePage",icon:a},{path:"gallery",title:"gallery",icon:i},{path:"videos",title:"videos",icon:t},{path:"curriculum",title:"curriculum",icon:e}];export{l as m};
