@@ -45,6 +45,7 @@ export default {
 				dev,
 				preprocess: autoPreProcess(preprocessOptions),
 				hydratable: true,
+				emitCss: true,
 			}),
 			urlPlugin,
 			resolve(),
