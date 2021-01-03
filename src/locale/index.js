@@ -52,7 +52,7 @@ translations.update({
             Um pacote que acho muito útil, pra gerenciar recursos (HTTP principalmente) em React.
           </li>
           <li>
-            <a href="https://github.com/cristovao-trevisan/webpage" target="_blank"> Webpage </a>:
+            <a href="https://github.com/cristovao-trevisan" target="_blank"> Webpage </a>:
             Esta página que você está lendo agora, assim como o restante do meu site, uma
             brincadeira pra explorar o <a href="https://svelte.dev/" target="_blank">svelte</a>.
           </li>
@@ -114,7 +114,7 @@ translations.update({
             A very useful package, to control resources (mostly HTTP) in React.
           </li>
           <li>
-            <a href="https://github.com/cristovao-trevisan/webpage" target="_blank"> Webpage </a>:
+            <a href="https://github.com/cristovao-trevisan" target="_blank"> Webpage </a>:
             This very own page, just like the rest of this website, a tryout of the
             <a href="https://svelte.dev/" target="_blank">svelte</a> framework.
           </li>

@@ -1,5 +1,5 @@
 const locales = ['pt', 'en']
-const baseUrl = 'https://cristovao-trevisan.github.io/webpage'
+const baseUrl = 'https://cristovao-trevisan.github.io'
 const pages = [
   { url: '/', priority: 1 },
   { url: '/artist', priority: 0.95 },

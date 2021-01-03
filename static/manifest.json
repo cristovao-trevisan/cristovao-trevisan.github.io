@@ -4,7 +4,7 @@
 	"name": "Cristóvão Trevisan - Personal Page",
 	"short_name": "Cristóvão Trevisan",
 	"display": "minimal-ui",
-	"start_url": "/webpage",
+	"start_url": "/",
 	"icons": [
 		{
 			"src": "logo-192.png",
