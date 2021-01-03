@@ -1,1 +1,0 @@
-import{H as i,I as t,V as a,F as e}from"./index.bf84d3de.js";var l=[{path:"",title:"homePage",icon:i},{path:"gallery",title:"gallery",icon:t},{path:"videos",title:"videos",icon:a},{path:"curriculum",title:"curriculum",icon:e}];export{l as m};
